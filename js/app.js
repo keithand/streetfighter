@@ -31,6 +31,7 @@ $(document).ready(function() {
 	});
 	$(document).keydown(function(event) {
 		if (event.which == 88) {
+			playSexy ();
 		   event.preventDefault();
 			$('.ryu-ready').hide();
 			$('.ryu-cool').show();
@@ -50,3 +51,13 @@ function playHadouken () {
   $('.hadouken-sound')[0].load();
   $('.hadouken-sound')[0].play();
 }
+
+function playSexy () {
+  $('.sexy')[0].volume = 0.5;
+  $('.sexy')[0].load();
+  $('.sexy')[0].play();
+}
+
+
+
+
