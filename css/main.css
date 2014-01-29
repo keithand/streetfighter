@@ -56,6 +56,10 @@ header {
 	float:left;
 }
 
+.ryu-still{
+	display: block;
+}
+
 .ryu-ready, .ryu-throwing, .ryu-cool {
 	display:none;
 }
