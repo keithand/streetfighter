@@ -1,72 +1,68 @@
 html {
-	padding:0;
-	margin: 0;
-	background: url('../images/back.jpg');
-	background-size: cover;
+        padding:0;
+        margin: 0;
+        background: url('../images/back.jpg');
+        background-size: cover;
 }
 
 body {
-	padding:0;
-	margin: 0;
+        padding:0;
+        margin: 0;
 }
 
 h1 {
-	font-family: 'Arvo', serif;
-	font-size: 2.5em;
-	font-weight: bold;
+        font-family: 'Arvo', serif;
+        font-size: 2.5em;
+        font-weight: bold;
 }
 
 p {
-	font-family: 'Arvo', serif;
-	font-size: 1.5em;
-	padding: 20px;
+        font-family: 'Arvo', serif;
+        font-size: 1.5em;
+        padding: 20px;
 }
 
 header {
-	display:block;
-	width: inherit;
-	position: relative;
-	margin: 0;
-	background-color: rgba(255, 255, 255, .6);
-	padding: 10px 10px 10px 20px;
-	margin-left:-100px;
-	color:#882D5A;
+        display:block;
+        width: inherit;
+        position: relative;
+        margin: 0;
+        background-color: rgba(255, 255, 255, .6);
+        padding: 10px 10px 10px 20px;
+        margin-left:-100px;
+        color:#882D5A;
 }
 
 #directions {
-	float:right;
-	background-color: rgba(255, 255, 255, .6);
-	width: 300px;
-	margin: 100px 100px 20px 800px;
-	position: absolute;
-	display: none;
+        float:right;
+        background-color: rgba(255, 255, 255, .6);
+        width: 300px;
+        margin: 100px 100px 20px 800px;
+        position: absolute;
+        display: none;
 }
 
 
 #game {
-	padding-left: 100px;
-	min-width: 1200px;
-	height: 620px;
-	margin:0;
-	position: absolute;
-	top:0;
+        padding-left: 100px;
+        min-width: 1200px;
+        height: 620px;
+        margin:0;
+        position: absolute;
+        top:0;
 }
 
 .ryu {
-	float:left;
-}
-
-.ryu-still{
-	display: block;
+        float:left;
 }
 
 .ryu-ready, .ryu-throwing, .ryu-cool {
-	display:none;
+        display:none;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-	width: 659px;
-	height:494px;
+        width: 659px;
+        height:494px;
 }
 
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
@@ -74,29 +70,29 @@ header {
 }
 
 .ryu-ready {
-	background-image: url('../images/ryu-ready-position.gif');
-	display: none;
+        background-image: url('../images/ryu-ready-position.gif');
+        display: none;
 }
 
 .ryu-cool {
-	background-image: url('../images/ryu-cool.gif');
+        background-image: url('../images/ryu-cool.gif');
 }
 
 .ryu-still {
-	background-image: url('../images/ryu-standing-still.png');
+        background-image: url('../images/ryu-standing-still.png');
 }
 
 .ryu-throwing {
-	background-image: url('../images/ryu-throwing-hadouken.png');
+        background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
 .hadouken {
-	background-image: url('../images/hadouken.gif');
-	width:156px;
-	height:90px;
-	display: none;
-	position: relative;
-	top:167px;
-	left: -212px;
-	float:left;
+        background-image: url('../images/hadouken.gif');
+        width:156px;
+        height:90px;
+        display: none;
+        position: relative;
+        top:167px;
+        left: -212px;
+        float:left;
 }
