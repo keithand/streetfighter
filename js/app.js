@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
+var press = true;
+var enter = false;
 //**************FUNCTIONS*****************
 
 function playCool () {
-    if (event.which == 88) {
-    playSexy ();
     $('.ryu-ready').hide();
-    $('.ryu-cool').show();   
-    }
+    $('.ryu-still').hide();
+    $('.ryu-cool').show();  
 }
 
 function playCoolFinish () {
@@ -52,30 +52,42 @@ function directions () {
 // *******************MAIN EVENTS******************
         $('.ryu').mouseenter(function(){
             playReady ();
+            enter = true;
         })        
         
         .mouseleave(function(){
             playStill ();
+            enter = false;
         })
         
         .mousedown(function(){
                 // play hadouken sound
                 playHadouken();
+                press = false;
                 // show hadouken and animate it to the right
                 playThrowing ();
         })
 
         .mouseup(function(){
             playThrowingFinish ();
+            press = true;
         });
 
         $(document).keydown(function(event) {
-            playCool ();
-        });
-
-        $.when(playCool).done(function(){
-            playCoolFinish ();
-        });
+            if (event.keyCode == 88 && press) {
+              playCool();
+            }
+        }).on('keyup', function(event){
+          if(event.keyCode == 88) {
+            $('.ryu-cool').hide();
+              if (enter){
+                 $('.ryu-ready').show(); 
+              }
+              else {
+                  $('.ryu-still').show();
+              }
+          }
+        })
 
         directions ();
 
@@ -94,7 +106,5 @@ function playSexy () {
   $('.sexy')[0].load();
   $('.sexy')[0].play();
 }
-
-
 
 
