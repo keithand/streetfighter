@@ -45,7 +45,7 @@ function playThrowingFinish () {
 }
 
 function directions () {
-    $('#directions').show().delay(3000).fadeOut();
+    $('#directions').show().delay(5000).fadeOut(2000);
 
 }
 
@@ -99,12 +99,6 @@ function playHadouken () {
   $('.hadouken-sound')[0].volume = 0.5;
   $('.hadouken-sound')[0].load();
   $('.hadouken-sound')[0].play();
-}
-
-function playSexy () {
-  $('.sexy')[0].volume = 0.5;
-  $('.sexy')[0].load();
-  $('.sexy')[0].play();
 }
 
 
